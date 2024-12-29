@@ -1,6 +1,5 @@
 package lec05
 
-import org.graalvm.compiler.debug.TTY.printf
 
 fun validateScore(score: Int) {
     if (score in 0..100) {
@@ -56,7 +55,7 @@ fun getGradeWithSwitch(score: Int): String {
 
 fun judgeNumber(number: Int) {
     when {
-        number == 0 -> printf("주어진 숫자는 0입니다.")
+        number == 0 -> println("주어진 숫자는 0입니다.")
         number % 2 ==0 -> println("주어진 숫자느 짝수입니다.")
         else -> println("주어진 숫자는 홀수입니다.")
     }
